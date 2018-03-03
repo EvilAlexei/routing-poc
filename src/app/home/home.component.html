@@ -1,5 +1,10 @@
-<div class="card">
-  <div class="card-body bg-success">
-    Home content
+<div class="container">
+  <h1 class="text-center">Home pages</h1>
+  <div class="list-group">
+    <a class="list-group-item list-group-item-action" [routerLink]="['./page-01']">Page 01</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['./page-02']">Page 02</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['./page-03']">Page 03</a>
   </div>
+  <br>
+  <router-outlet></router-outlet>
 </div>
