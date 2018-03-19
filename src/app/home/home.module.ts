@@ -12,9 +12,6 @@ import { routes as childRoutes } from './home.routing';
     Page02Component,
     Page03Component
   ],
-  imports: [
-    RouterModule.forRoot(childRoutes)
-  ],
   providers: []
 })
 export class HomeModule {}
