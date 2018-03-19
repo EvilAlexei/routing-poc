@@ -15,3 +15,15 @@ before_install:
 
 script:
   - npm test
+
+after_success:
+  - ./node_modules/.bin/codecov  -f coverage/coverage-final.json
+
+addons:
+  firefox: "42.0"
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    # required by node-gyp to build some packages
+    packages:
+    - g++-4.8
